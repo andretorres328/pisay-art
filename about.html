@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="UTF-8" />
+		<title>P. Art</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="img/pa.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		(function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
+		if(typeof param.defaultContent=="number")
+		{var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
+		$(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
+		function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
+		{$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
+		$(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
+		</script>
+		<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+
+		<style type="text/css">
+						.title{
+					font-family: 'astronoutregular';
+					font-size: 120px;
+								}
+						p {
+						font-family: 'montserrat_alternatesregular';
+						line-height: 1.6;	
+						}
+			</style>
+	</head>
+	
+	<body>
+	
+		<div class = "header">
+	
+		<div class = "background">
+			<img src = "img/P1.png"/>
+		</div>
+		
+		<ul class = "tabs">
+			<li class = "home tab hover"><a href = "home.html"> Home </a></li>
+			
+			<li class = "first hover tab dropdown"><div class = "menu"> <img src = "img/menu.png"/> </div> <span> Nib Pen </span>
+				<div class="dropdown-content">
+					<a href= "Gabriel.html"> Introduction </a>
+					<a href= "Gabriel.html#alphabet"> Alphabet </a>
+					<a href= "Gabriel.html#word"> Word of the Day </a>
+					<a href= "Gabriel.html#bonus"> Reflection </a>		
+				</div>
+			</li>
+			
+			<li class = "second tab hover dropdown"><div class = "menu"> <img src = "img/menu.png"/> </div> <span><a href="Alejandro.html" class="except"> Brush Pen </a></span>
+				<div class="dropdown-content">
+					<a href= "Alejandro.html"> Introduction </a>
+					<a href= "Alejandro.html#alphabet"> Alphabet </a>
+					<a href= "Alejandro.html#word"> Word of the Day </a>
+					<a href= "Alejandro.html#bonus"> Reflection </a>		
+				</div>
+			</li>
+			
+			<li class = "forms tab hover"><a href="forms.html"> Contact & Information </a></li>
+			
+			<li class = "about tab  active"><a href="about.html"> About </a></li>
+			
+		</ul>
+		
+		</div> 
+	
+	<div class = "content">
+	
+		<div class = "side left">
+		
+		</div>
+		
+		<div class = "body">
+		
+			<div class = "title">
+				Learn more about us!
+			</div>
+			
+			<br/>
+			<br/>
+			<div class = "caption">
+				<div class = "froi detail">
+				<div class = "portrait">
+					<img src = "img/froi.jpg"/>
+				</div>
+				<h3> Froi Sabas </h3>
+					<p>A student of PSHS in the section 9-Rubidium. He is a master <span class = "me">(not really) </span> of brush pen calligraphy and the Mastermind behind this website. He taught Andre the basics of how to write with a brush pen during Biology (don't worry they took notes winky face that I won't type out because it ends in a parenthesis and I don't want double). After brush pen calligraphy baking boringly easy for him <span class = "me"> (I still need to practice, though) </span>, he decided to start practicing the nib pen. He's also into vocaloid and has even created some covers of his own. Stan V flower. </p> 
+				</div>	
+					<br><br>
+				<div class = "andre detail">
+				<div class = "portrait">
+					<img src = "img/andre.jpg"/>
+				</div>
+				<h3> Andre Torres </h3>
+					<p> Also in PSHS in the section 9-Rubidum and the apprentice of Froi in brush pen calligraphy. After a fateful encounter in Bio, Froi took him under his wing and taught him the secrets of brush pens, even giving him a guide that was definitely not written in Com Sci. To showcase their calligraphy, Andre forced (joke, I think)<span class = "me"> (yeah I think too) </span> Froi to become his partner in this project. Andre is also a fan of the kpop girl group TWICE (aka a once) and only mildly suggests to his friends to listen to them. Stan Im Nayeon. </p>	
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class = "side right">
+		
+		</div>
+		
+	</div>
+	</body>
+</html>

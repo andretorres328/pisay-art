@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>P. Art</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="img/pa.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		(function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
+		if(typeof param.defaultContent=="number")
+		{var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
+		$(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
+		function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
+		{$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
+		$(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
+		</script>
+		<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+
+		<style type="text/css">
+						.title{
+					font-family: 'astronoutregular';
+								}
+						p {
+						font-family: 'montserrat_alternatesregular';
+						line-height: 1.6;	
+						}
+			</style>
+	</head>
+	
+	<body>
+	
+		<div class = "header">
+	
+		<div class = "background">
+			<img src = "img/P1.png"/>
+		</div>
+		
+		<ul class = "tabs">
+			<li class = "home tab active"><a href = "home.html"> Home </a></li>
+			
+			<li class = "first tab dropdown hover"><div class = "menu"> <img src = "img/menu.png"/> </div> <span> Nib Pen </span>
+				<div class="dropdown-content">
+					<a href= "Gabriel.html"> Introduction </a>
+					<a href= "Gabriel.html#alphabet"> Alphabet </a>
+					<a href= "Gabriel.html#word"> Word of the Day </a>
+					<a href= "Gabriel.html#bonus"> Reflection </a>	
+				</div>
+			</li>
+			
+			<li class = "second tab hover dropdown"><div class = "menu"> <img src = "img/menu.png"/> </div> <span><a href="Alejandro.html" class="except"> Brush Pen </a></span>
+				<div class="dropdown-content">
+					<a href= "Alejandro.html"> Introduction </a>
+					<a href= "Alejandro.html#alphabet"> Alphabet </a>
+					<a href= "Alejandro.html#word"> Word of the Day </a>
+					<a href= "Alejandro.html#bonus"> Reflection </a>	
+				</div>
+			</li>
+			
+			<li class = "forms tab hover"><a href="forms.html"> Contact & Information </a></li>
+			
+			<li class = "about tab hover"><a href="about.html"> About </a></li>
+			
+		</ul>
+		
+		</div>
+	</div>
+	
+	<div class = "content">
+	
+		<div class = "side left">
+		
+		</div>
+		
+		<div class = "body">
+		
+			<div class = "title">
+				Pisay Art
+			</div>
+			<div class = "picture">
+				<img src = "img/pa.png" />
+			</div>
+			<div class = "caption">
+				<p> Welcome to the Pisay Art (Also known as P. Art) website! We are a pair of students in Philippine Science Highschool that are calligraphy enthusiasts.
+					We created this website to document and showcase how our calligraphy style both improves and develops. We are trying to prove that Pisay scholars are not
+					just academically-talented, but we can also be artistically-talented if we try hard enough. 
+					<br/>
+					<br/>
+					We hope you enjoy what
+					you will see and, if you liked it that much, you would also want us to do some calligraphy for you. :)</p>	
+			</div>
+			
+		</div>
+		
+		<div class = "side right">
+		
+		</div>
+		
+	</div>
+	</body>
+	
+</html>
